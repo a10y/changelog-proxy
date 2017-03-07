@@ -15,7 +15,7 @@ function currentURL() {
 }
 
 // Only update once an hour
-setTimeout(() => {
+setInterval(() => {
     CHANGELOG_URL = currentURL()
     console.log("Set url to ", CHANGELOG_URL)
 }, 1000 * 60 * 60);
